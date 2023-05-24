@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <div class="container">
+        <div class="row align-items-end">
+            <h1 class="green-text font-weight-light pr-3">Places</h1>
+            <span>Aenan commodo ligeula eget dolor. Aenan massa.</span>
+        </div>
+        <div class="row" id="parent-row">
+
+        </div>
+    </div>
+
+    <div id="custom-modal" style="display: none;">
+        <div class="row justify-content-center center-this">
+            <div class="col-md-12">
+                <div class="modalbox mx-auto">
+                    <div class="d-flex justify-content-end position-absolute"
+                        style="right: 0; transform: translate(-50%,-50%)">
+                        <i class="fa-solid fa-xmark " onclick="closeModal()" style="cursor: pointer"></i>
+                    </div>
+                    <div class="row w-100 ">
+                        <div class="col-md-6" style="height: 200px; ">
+                            <img src="assets/images/temple.jpg" alt="" id="modal-image" class="img-fluid w-100" style="height: 200px;"/>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex w-50 flex-column flex-wrap">
+                                <h3 class="green-text" id="modal-title"></h3>
+                                <p id="modal-desc"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto">
+        <div class="container green text-light  ">
+            <div class="row py-3">
+                <div class="col-md-3 pb-3">
+                    <h5>CONTACT US</h5>
+                    <div class="content pt-3">
+
+                        <span><i class="fa-sharp fa-solid fa-location-dot"></i> Our business address is 1063 Freelon
+                            Street
+                            San Fransisco, CA 95108</span>
+                        <span><i class="fa fa-mobile"></i> + 2010223441 / or + 2010223441</span>
+                        <span><i class="fa-solid fa-envelope"></i>Support@support.com</span>
+                        <button class="mt-2">Contact From</button>
+                    </div>
+                </div>
+                <div class="col-md-3 offset-md-1 pb-3">
+                    <h5>CONNECT WITH US</h5>
+
+                    <div class="d-flex pt-2 icon-row">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa-brands fa-facebook-f fa-stack-1x fa-inverse green-text"
+                                style="font-size: 25px"></i>
+                        </span>
+                        <span class="fa-stack ">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa-brands fa-twitter fa-stack-1x fa-inverse green-text"
+                                style="font-size: 25px"></i>
+                        </span>
+                        <span class="fa-stack ">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa-brands fa-pinterest fa-stack-1x fa-inverse green-text"
+                                style="font-size: 25px"></i>
+                        </span>
+                    </div>
+                    <hr class="bg-light" />
+                    <span>Sign up today and never miss another deal again!</span>
+
+                    <div class="d-flex news-letter">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="text" placeholder="Your e-mail address" />
+                        <button>Sign up!</button>
+                    </div>
+                </div>
+                <div class="col-md-3 offset-md-1 pb-3">
+                    <h5>ABOUT US</h5>
+                    <div class="d-flex">
+                        <div class="about-us w-50">
+
+                            <span>Consectetur adipisicing elit. Aenan nisl orci, condimentum ultrices consequat
+                                eu</span>
+                            <ul>
+                                <li class="pb-2">Aenan imperdiet firgilla ligula, ut mollis vi vennatis</li>
+                                <li>Aenan imperdiet firgilla ligula, ut mollis vi vennatis</li>
+                            </ul>
+                        </div>
+                        <img src="assets/images/bg-about.png" alt="" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
